@@ -13,19 +13,19 @@ class CartaoDeCredito
   public $Clien;
 
 
-function __construct($Num,$Data)
-    (
-      $this->name=$Num;
+public function __construct($Num,$Data)
+    {
+      $this->numero=$Num;
       $this->DataDeValidade=$Data;
 
-      )
-_
+    }
+
 }
 
 
 
    $Clien = new Cliente();
-   $Cart  = new CartaoDeCredito();
+   $Cart  = new CartaoDeCredito(3,"25/12/2014");
 
 
    $Clien->Nome="Rafael Cosentino";
